@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-foods
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: example-foods
+  template:
+    metadata:
+      labels:
+        app: example-foods
+    spec:
+      containers:
+        -
+          image: 189518951895/food
+          name: example-foods
+          ports:
+            - containerPort: 8081
+              name: rest
+            - containerPort: 7081
+              name: grpc

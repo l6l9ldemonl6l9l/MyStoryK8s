@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-deitys
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: example-deitys
+  template:
+    metadata:
+      labels:
+        app: example-deitys
+    spec:
+      containers:
+        -
+          image: 189518951895/deity
+          name: example-deitys
+          ports:
+            - containerPort: 8083
+              name: rest
+            - containerPort: 7083
+              name: grpc

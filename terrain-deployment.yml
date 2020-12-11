@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-terrains
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: example-terrains
+  template:
+    metadata:
+      labels:
+        app: example-terrains
+    spec:
+      containers:
+        -
+          image: 189518951895/terrain
+          name: example-terrains
+          ports:
+            - containerPort: 8084
+              name: rest
+            - containerPort: 7084
+              name: grpc

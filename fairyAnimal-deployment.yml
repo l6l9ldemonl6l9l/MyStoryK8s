@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-fairyAnimals
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: example-fairyAnimals
+  template:
+    metadata:
+      labels:
+        app: example-fairyAnimals
+    spec:
+      containers:
+        -
+          image: 189518951895/fairyanimal
+          name: example-fairyAnimals
+          ports:
+            - containerPort: 8082
+              name: rest
+            - containerPort: 7082
+              name: grpc

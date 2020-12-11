@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db-food
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db-food
+  template:
+    metadata:
+      labels:
+        app: db-food
+    spec:
+      containers:
+        - env:
+            - name: POSTGRES_DB
+              value: food
+            - name: POSTGRES_PASSWORD
+              value: "password"
+            - name: POSTGRES_USER
+              value: postgres
+          image: postgres
+          imagePullPolicy: IfNotPresent
+          name: db-food
+          ports:
+            - containerPort: 5432

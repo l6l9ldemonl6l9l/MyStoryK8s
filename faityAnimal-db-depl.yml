@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db-fairyAnimal
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db-fairyAnimal
+  template:
+    metadata:
+      labels:
+        app: db-fairyAnimal
+    spec:
+      containers:
+        - env:
+            - name: POSTGRES_DB
+              value: fairyAnimal
+            - name: POSTGRES_PASSWORD
+              value: "password"
+            - name: POSTGRES_USER
+              value: postgres
+          image: postgres
+          imagePullPolicy: IfNotPresent
+          name: db-fairyAnimal
+          ports:
+            - containerPort: 5432

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db-terrain
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db-terrain
+  template:
+    metadata:
+      labels:
+        app: db-terrain
+    spec:
+      containers:
+        - env:
+            - name: POSTGRES_DB
+              value: terrain
+            - name: POSTGRES_PASSWORD
+              value: "password"
+            - name: POSTGRES_USER
+              value: postgres
+          image: postgres
+          imagePullPolicy: IfNotPresent
+          name: db-terrain
+          ports:
+            - containerPort: 5432

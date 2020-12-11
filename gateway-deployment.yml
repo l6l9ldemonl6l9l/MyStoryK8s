@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-gw
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: exaple-gw
+  template:
+    metadata:
+      labels:
+        app: example-gw
+    spec:
+      containers:
+        -
+          image: 189518951895/gateway
+          name: example gw
+          ports:
+            - containerPort: 8080
+              name: rest
+            - containerPort: 7080
+              name: grpc
