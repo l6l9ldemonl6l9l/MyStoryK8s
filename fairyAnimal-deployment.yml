@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: example-fairyAnimals
+  name: example-fairyanimals
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: example-fairyAnimals
+      app: example-fairyanimals
   template:
     metadata:
       labels:
-        app: example-fairyAnimals
+        app: example-fairyanimals
     spec:
       containers:
         -
           image: 189518951895/fairyanimal
-          name: example-fairyAnimals
+          name: example-fairyanimals
           ports:
             - containerPort: 8082
               name: rest

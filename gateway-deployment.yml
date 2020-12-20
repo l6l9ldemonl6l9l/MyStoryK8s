@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: exaple-gw
+      app: example-gw
   template:
     metadata:
       labels:
@@ -15,7 +15,7 @@ spec:
       containers:
         -
           image: 189518951895/gateway
-          name: example gw
+          name: example-gw
           ports:
             - containerPort: 8080
               name: rest

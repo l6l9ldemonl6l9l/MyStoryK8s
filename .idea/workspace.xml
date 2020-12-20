@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6b90c3f-436a-4a6b-8907-001cf75bf628" name="Default Changelist" comment="" />
+    <list default="true" id="f6b90c3f-436a-4a6b-8907-001cf75bf628" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/rabbitmq-depl.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deity-db-depl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deity-db-depl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fairyAnimal-db-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fairyAnimal-db-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fairyAnimal-deployment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fairyAnimal-deployment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fairyAnimal-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fairyAnimal-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faityAnimal-db-depl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fairyAnimal-db-depl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-db-depl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/food-db-depl.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-deployment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/food-deployment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/food-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-deployment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-deployment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terrain-db-depl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/terrain-db-depl.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,27 +28,74 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="minikube" />
+    <option name="namespace" value="default" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1lTrKCTx8wyVysqqFVG1I4hYn1H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ACTIVE_CLOUD_PROJECT_ACCOUNT" value="lvlvlviruslslsl@gmail.com" />
+    <property name="ACTIVE_CLOUD_PROJECT_ID" value="ringed-reach-296313" />
+    <property name="ACTIVE_CLOUD_PROJECT_NAME" value="My Project 68729" />
+    <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="58476197250" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.google.cloudcode.ide_session_index" value="20201210_0001" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cinemaRestMain-master" />
+    <property name="com.google.cloudcode.ide_session_index" value="20201219_0014" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../trspo_client-main/story_client" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="CloudCodeCloudRunConfigurationType" factoryName="CloudCodeCloudDeployRunConfigurationFactory" show_console_on_std_err="false" show_console_on_std_out="false" gcpProject="{&quot;googleUsername&quot;:&quot;lvlvlviruslslsl@gmail.com&quot;,&quot;projectId&quot;:&quot;ringed-reach-296313&quot;,&quot;projectName&quot;:&quot;My Project 68729&quot;,&quot;projectNumber&quot;:58476197250}">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="buildpacksEnv" />
+      <option name="cloudSqlConnections">
+        <list />
+      </option>
+      <option name="concurrency" value="80" />
+      <option name="cpuAllocated" value="1" />
+      <option name="customCpuAllocated" value="" />
+      <option name="dockerBuildArgs" />
+      <option name="dockerTarget" value="" />
+      <option name="environmentVariables" />
+      <option name="gkeClusterLocation" />
+      <option name="gkeClusterName" />
+      <option name="gkeClusterNamespace" value="default" />
+      <option name="gkeConnectivity" value="EXTERNAL" />
+      <option name="imagePath" value="docker.io/{189518951895}" />
+      <option name="loadingAvailableBuilders" value="false" />
+      <option name="managedAuthentication" value="ALLOW_UNAUTHENTICATED" />
+      <option name="managedRegion" value="us-central1" />
+      <option name="maxInstances" value="1000" />
+      <option name="memoryAllocated" value="MIB_256" />
+      <option name="minInstances" value="" />
+      <option name="platform" value="FULLY_MANAGED" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="serviceAccount" value="" />
+      <option name="serviceName" value="mystoryk8s" />
+      <option name="timeout" value="300" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -45,10 +107,42 @@
       <updated>1607631865169</updated>
       <workItem from="1607631867923" duration="528000" />
       <workItem from="1607632414874" duration="2789000" />
+      <workItem from="1607681424476" duration="507000" />
+      <workItem from="1608200587667" duration="811000" />
+      <workItem from="1608205787048" duration="1518000" />
+      <workItem from="1608218623574" duration="4947000" />
+      <workItem from="1608230764734" duration="1229000" />
+      <workItem from="1608285922199" duration="843000" />
+      <workItem from="1608288091787" duration="2445000" />
+      <workItem from="1608291368658" duration="3773000" />
+      <workItem from="1608299671116" duration="1865000" />
+      <workItem from="1608302823937" duration="5521000" />
+      <workItem from="1608312455432" duration="5086000" />
+      <workItem from="1608319746904" duration="868000" />
+      <workItem from="1608321118981" duration="1643000" />
+      <workItem from="1608326934735" duration="684000" />
+      <workItem from="1608373747162" duration="1272000" />
+      <workItem from="1608378689530" duration="1479000" />
+      <workItem from="1608384212621" duration="2271000" />
+      <workItem from="1608387631275" duration="4270000" />
+      <workItem from="1608393497353" duration="3985000" />
+      <workItem from="1608398339264" duration="3236000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
